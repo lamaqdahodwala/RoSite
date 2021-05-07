@@ -3,8 +3,9 @@
 {% block content %} 
     <div class="container">
         <form action="/redirect" method="get">
+            {% csrf_token %}
             <small class="is-small">Roblox user ID</small>
-                <input class="input is-rounded" type="text" placeholder="1"/>
+                <input class="input is-rounded" type="text" placeholder="1" id='idinput' name='idinput'/> <br>
                 <button class="button is-primary is-rounded is-success" type='submit'>Submit</button>
         </form>
     </div>
