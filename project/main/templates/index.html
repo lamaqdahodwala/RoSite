@@ -1,0 +1,11 @@
+{% extends 'base.html' %} 
+
+{% block content %} 
+    <div class="container">
+        <form action="/redirect" method="get">
+            <small class="is-small">Roblox user ID</small>
+                <input class="input is-rounded" type="text" placeholder="1"/>
+                <button class="button is-primary is-rounded is-success" type='submit'>Submit</button>
+        </form>
+    </div>
+{% endblock %}
